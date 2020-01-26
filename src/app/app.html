@@ -1,0 +1,25 @@
+<ion-menu [content]="content">
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Mi Scholarship</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <ion-content>
+      <ion-list>
+       <ion-item no-lines class="item-avatar">
+          <ion-avatar item-start>
+            <img src="assets/img/avatar.svg">
+          </ion-avatar>
+          <h2>desconectado</h2>
+          <p>Fundación Lengua Española</p>
+        </ion-item>
+        <ion-item-group>
+          <button menuClose ion-item>Iniciar sesión</button>
+        </ion-item-group>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

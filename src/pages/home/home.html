@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Fundación Lengua</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div id="animate-area"></div>
+  <div id="logo-area"><img src="assets/img/icono.svg"></div>
+
+  <div>
+    <div class="elemento">
+      <button class="botonCircular">
+        <img src="assets/img/noticias.svg" class="icono" (click)="cargarNoticias()"><br>
+        Noticias
+      </button>
+    </div>
+    <div class="elemento">
+      <button class="botonCircular">
+        <img src="assets/img/scholarship.svg" class="icono"><br>
+        Scholarship
+      </button>
+    </div>
+    <div class="elemento">
+      <button class="botonCircular">
+          <!-- http://www.fundacionlengua.com/radiofle/listas/listen.pls -->
+        <img src="assets/img/radiofle.svg" class="icono"><br>
+        RadioFLE
+      </button>
+    </div>
+    <div class="elemento">
+      <button class="botonCircular">
+        <img src="assets/img/podcast.svg" class="icono"><br>
+        Podcast
+      </button>
+    </div>
+  </div>
+
+</ion-content>
