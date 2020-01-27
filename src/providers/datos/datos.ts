@@ -12,7 +12,7 @@ export class DatosProvider {
   }
   getRespuesta(api:string, operacion:string = '', datos:any = []){
     
-    console.log(api);
+    // console.log(api);
 
     // iniciamos loading
     let loading = this.loadingCtrl.create({ content: operacion!=''?operacion:'Cargando '+'...' });

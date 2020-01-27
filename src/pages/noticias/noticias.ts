@@ -11,7 +11,6 @@ export class NoticiasPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public menu: MenuController) {
     this.noticias = this.navParams.data;
-    console.log(this.noticias);
   }
 
   ionViewDidEnter() {

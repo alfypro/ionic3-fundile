@@ -13,9 +13,9 @@
   <div id="logo-area"><img src="assets/img/icono.svg"></div>
 
   <div>
-    <div class="elemento">
+    <div class="elemento" (click)="cargarNoticias()">
       <button class="botonCircular">
-        <img src="assets/img/noticias.svg" class="icono" (click)="cargarNoticias()"><br>
+        <img src="assets/img/noticias.svg" class="icono"><br>
         Noticias
       </button>
     </div>
@@ -32,7 +32,7 @@
         RadioFLE
       </button>
     </div>
-    <div class="elemento">
+    <div class="elemento" (click)="cargarPodcast()">
       <button class="botonCircular">
         <img src="assets/img/podcast.svg" class="icono"><br>
         Podcast

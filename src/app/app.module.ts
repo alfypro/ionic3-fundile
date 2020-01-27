@@ -11,6 +11,7 @@ import { DatosProvider } from '../providers/datos/datos';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { NoticiasPage } from '../pages/noticias/noticias';
+import { PodcastPage } from '../pages/podcast/podcast';
 
 import { StripHtmlPipe } from '../pipes/striphtml/striphtml';
 
@@ -19,6 +20,7 @@ import { StripHtmlPipe } from '../pipes/striphtml/striphtml';
     MyApp,
     HomePage,
     NoticiasPage,
+    PodcastPage,
     StripHtmlPipe
   ],
   imports: [
@@ -30,6 +32,7 @@ import { StripHtmlPipe } from '../pipes/striphtml/striphtml';
   entryComponents: [
     MyApp,
     HomePage,
+    PodcastPage,
     NoticiasPage
   ],
   providers: [

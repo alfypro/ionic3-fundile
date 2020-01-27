@@ -1,7 +1,7 @@
 page-home {
 	@keyframes animatedBackground {
 		from { background-position: 0 0; }
-		to { background-position: 100% 0; }
+		to { background-position: -10000px 0; }
 	}
 
 	#animate-area	{ 
@@ -10,7 +10,7 @@ page-home {
 		background-image: url(../assets/img/background.png);
 		background-position: 0px 0px;
 		background-repeat: repeat-x;
-		animation: animatedBackground 40s linear infinite;
+		animation: animatedBackground 200s linear infinite;
     }
     
     #logo-area{
