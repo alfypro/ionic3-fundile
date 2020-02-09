@@ -22,7 +22,7 @@ export class DatosProvider {
 
     return new Promise((resolve) => {
 
-      let respuesta;
+      // let respuesta;
 
       this.http.get(api,datos).subscribe(
         data => {

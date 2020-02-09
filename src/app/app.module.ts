@@ -7,6 +7,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { GlobalesProvider } from '../providers/globales/globales';
 import { DatosProvider } from '../providers/datos/datos';
+// import { NativeAudio } from '@ionic-native/native-audio';
+import { Media } from '@ionic-native/media';
+import { MusicControls } from '@ionic-native/music-controls';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -14,6 +17,15 @@ import { NoticiasPage } from '../pages/noticias/noticias';
 import { PodcastPage } from '../pages/podcast/podcast';
 
 import { StripHtmlPipe } from '../pipes/striphtml/striphtml';
+
+// import { IonicAudioModule, WebAudioProvider, CordovaMediaProvider, defaultAudioProviderFactory } from 'ionic-audio';
+ 
+// /**
+//  * Sample custom factory function to use with ionic-audio
+//  */
+// export function myCustomAudioProviderFactory() {
+//   return (window.hasOwnProperty('cordova')) ? new CordovaMediaProvider() : new WebAudioProvider();
+// }
 
 @NgModule({
   declarations: [
@@ -24,6 +36,7 @@ import { StripHtmlPipe } from '../pipes/striphtml/striphtml';
     StripHtmlPipe
   ],
   imports: [
+    // IonicAudioModule.forRoot(defaultAudioProviderFactory), 
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule
@@ -38,7 +51,10 @@ import { StripHtmlPipe } from '../pipes/striphtml/striphtml';
   providers: [
     StatusBar,
     SplashScreen,
+    Media,
+    MusicControls,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    // NativeAudio,
     GlobalesProvider,
     DatosProvider
   ]
