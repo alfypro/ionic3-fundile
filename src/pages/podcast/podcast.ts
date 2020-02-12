@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams, Platform } from 'ionic-angular';
 // import { NativeAudio } from '@ionic-native/native-audio';
 // import { MusicControls } from '@ionic-native/music-controls';
